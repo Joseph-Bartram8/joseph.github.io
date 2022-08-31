@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Software Development Journey</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <script src="js/portfolio.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/testing_overlay.js"></script>
+</head>
+<body>
+    <div class="menu-wrap">
+        <input id="menu_button" type="checkbox" class="toggler">
+        <div class="hamburger"><div></div></div>
+        <div class="menu" onclick="menuClose()">
+          <div>
+            <div>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Portfolio</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="overlayClose" class="menu-wrap2"  style="display: none;">
+        <input id="menu_button2" type="checkbox" class="toggler2" onclick="closeOverlay();">
+        <div class="hamburger2"><div></div></div>
+        <div class="menu2" onclick="menuClose();">
+          <div>
+            <div class="title" style="overflow-y: auto;">
+                <h1 class="title">Joseph Bartram Portfolio Website</h1>
+                <section class="content">
+                    <section class="text">
+                        <div>
+                            <h2>My Goals</h2>
+                            <p>I wanted to create a website for multiple reasons:</p>
+                            <ul>
+                                <li>I wanted somewhere to showcase the projects I do and also act as an archive so I can look back and see how I've progressed.</li>
+                                <li>I also wanted to learn responsive web design as it wasn't something that was taught to us in school.</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h2>My Journey</h2>
+                            <p>
+                                As I knew my main challenge here would be the responsive web design, I did a little research and found a Udemy course on Flexbox by Peter Sommerhoff which looked really good. 
+                                it took around 2-3 hours and gave me a really good overview of how to use flexbox to create responsive websites.
+                            </p>
+                            <p>
+                                After a fair amount of experimenting with CSS using felxbox styles. I started to sketch out what I wanted my website to look like. 
+                                I'd seen some designs I quite liked which I drew inspiration from and wanted the website to relfect not just the more professional work I'm doing, but also who I am and my character.
+                            </p>
+                            <h2>
+                                The Results
+                            </h2>
+                            <p>
+                                I guess this website will never be finished as I will alwasy be adding to it, for instance, even now 
+                                I'm thinking it would be good to have links to my certificates from the education page.
+                            </p>
+                            <p>
+                                Importantly I've learnt so much during this project. A little acessibility, responsive web design, a little java script and I've tested this on multiple desktop and mobile browsers. 
+                                It's not perfect yet, but definitley good enough to release while I work on some other projects
+                            </p>
+                            <p>
+                                I have tested this website on the following devices: PC (Chrome and Edge), iPhone 8+, iPhone 11 pro
+                            </p>
+                        </div>
+                    </section>
+                    <section>
+                        <div>
+                            <img class="portfolio_image" src="images/portfolio_joseph_portfolio.png" alt="picture of my website nut small">
+                            <img class="portfolio_image image2" src="images/portfolio_education.PNG" alt="picture of my website nut small">
+                        </div>
+                    </section>
+                </section>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="overlayClose1" class="menu-wrap2"  style="display: none;">
+        <input id="menu_button3" type="checkbox" class="toggler2" onclick="closeOverlay();">
+        <div class="hamburger2"><div></div></div>
+        <div class="menu2" onclick="menuClose();">
+          <div>
+            <div class="title" style="overflow-y: auto;">
+                <h1 class="title">Joseph Bartram C# Learning</h1>
+                <section class="content">
+                    <div>
+                        <H1>Learning C#</H1>
+                    </div>
+                    <section>
+                </section>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="overlayClose2" class="menu-wrap2"  style="display: none;">
+        <input id="menu_button4" type="checkbox" class="toggler2" onclick="closeOverlay();">
+        <div class="hamburger2"><div></div></div>
+        <div class="menu2" onclick="menuClose();">
+          <div>
+            <div class="title" style="overflow-y: auto;">
+                <h1 class="title">Joseph Bartram Platform Game</h1>
+                <section class="content">
+                    <video controls>
+                        <source src="videos/GameVideo1.mp4">
+                    </video>
+                    <section>
+                </section>
+            </div>
+          </div>
+        </div>
+      </div>
+    <section class="s_container">
+        <div class="d_header">
+            <h1>My Software Development Journey</h1>
+        </div>
+        <section class="s_container_inner">
+            <div id="mWeb" class="d_submenu d_submenu_selected" onclick="menuClick(this);">
+                Web Design
+            </div>
+            <div id="mCSharp"  class="d_submenu" onclick="menuClick(this);">
+                <span class="largeWeb">C# Programming</span>
+                <span class="smallWeb">C#</span>
+            </div>
+            <div id="mUnity" class="d_submenu" onclick="menuClick(this);">
+                
+                <span class="largeWeb">Unity (Game Programming)</span>
+                <span class="smallWeb">Unity</span>
+            </div>
+        </section>
+        <section class="s_container_inner s_container_inner2">
+            <div id="copyWeb" class="d_portfolio_copy d_portfolio_copy_selected">
+                <section class="s_portfolio_images">
+                    <!--First portfolio image-->
+                    <div onclick="showCard1();" class="portfolio_outer_div">
+                        <img class="portfolio_image" src="images/portfolio_joseph_portfolio.png" alt="Image of Josephs Portfolio Website">
+                        <div class="portfolio_copy">
+                            Joseph Bartram<br />Portfolio Website
+                        </div>
+                        <div class="portfolio_copy portfolio_date">
+                            Feburary 2021
+                        </div>
+                    </div>                  
+                </section>
+            </div>
+            <div id="copyCSharp" class="d_portfolio_copy ">
+                <section class="s_portfolio_images">
+                    <div onclick="showCard2();" class="portfolio_outer_div">
+                        <img class="portfolio_image" src="images/C-Sharp.PNG" alt="Image of C-Sharp symbol">
+                        <div class="portfolio_copy">
+                            Joseph Bartram<br />C# Learning
+                        </div>
+                        <div class="portfolio_copy portfolio_date">
+                            April 2021
+                        </div>
+                    </div>                  
+                </section>
+            </div>
+            <div id="copyUnity" class="d_portfolio_copy ">
+                <section class="s_portfolio_images">
+                    <div onclick="showCard3();" class="portfolio_outer_div">
+                        <img class="portfolio_image" src="images/GameThumbnail.PNG" alt="Image of platform game in Unity">
+                        <div class="portfolio_copy">
+                            Joseph Bartram<br />Platform Game
+                        </div>
+                        <div class="portfolio_copy portfolio_date">
+                            April 2021
+                        </div>
+                    </div>                  
+                </section>
+            </div>
+        </section>
+        <div class="d_footer">
+            <a  href="https://www.instagram.com/" target="_blank"><img class="footer_image" src="images/instagram.png"></a>
+            <a href="https://twitter.come" target="_blank"><img class="footer_image" src="images/twitter.png"></a>
+            <a href="https://linkedin.com" target="_blank"><img class="footer_image" src="images/linkedin.png"></a>
+        </div>
+        </section>
+    </body>
+</html>
